@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost:27017/Form");
+mongoose.connect("mongodb+srv://areeb:areeb@cluster001.zrgem.mongodb.net/FORM?retryWrites=true&w=majority");
 let cors = require("cors");
 app.use(cors());
 app.use(express.json());
