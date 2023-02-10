@@ -40,7 +40,7 @@ export default function SignIn() {
       setValidEmail(true);
     } else {
       axios
-        .post("http://localhost:3001/signIn", {
+        .post("http://localhost:4000/signIn", {
           email: email,
           password: password,
         })

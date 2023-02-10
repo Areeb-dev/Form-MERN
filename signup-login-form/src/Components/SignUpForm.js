@@ -56,7 +56,7 @@ export default function SignUp() {
     } else {
       if (password === comfirmPassword) {
         axios
-          .post("http://localhost:3001/users", {
+          .post("http://localhost:4000/users", {
             fullName: fullName,
             email: email,
             password: password,
