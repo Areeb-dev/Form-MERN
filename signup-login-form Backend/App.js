@@ -2,8 +2,6 @@ const express = require('express')
 const app = express()
 let cors = require('cors')
 const { mongoose } = require('./config')
-const signupRoute = require('./routes/signUpRoute.js')
-const signInRoute = require('./routes/signInRoutes')
 
 var db = mongoose.connection
 db.on('error', (err) => {
